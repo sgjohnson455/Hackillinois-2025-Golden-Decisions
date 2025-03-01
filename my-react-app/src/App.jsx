@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Textbox from '../src/components/Textbox' 
 import Book from '../src/components/Book'
+import Welcome from './components/Welcome'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,8 +12,9 @@ function App() {
   return (
     <>
       <style>@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');</style>
-      <Book />
-      <Textbox request={"Please give gold"} />
+      <Welcome />
+      {/* <Book />
+      <Textbox request={"Please give gold"} /> */}
 
 
       {/* <div>
