@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -12,9 +13,15 @@ function App() {
   return (
     <>
       <style>@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');</style>
-      {/* <Welcome /> */}
-      <Book />
-      <Textbox request={"Please give gold"} />
+      <Router>
+        <Routes>
+          <Route exact path='/' element= {<Welcome />} />
+          <Route exact path='/maingame' element= {<Textbox />}/>
+        </Routes>
+      </Router>
+      
+      {/* <Book />
+      <Textbox request={"Please give gold"} /> */}
 
 
       {/* <div>
