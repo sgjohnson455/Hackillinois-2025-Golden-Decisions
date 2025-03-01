@@ -1,4 +1,6 @@
 .outBox {
+    margin: 0.5rem;
+    align-self: end;
     background-color: black;
     padding: 0.5rem;
     clip-path: polygon(0 10px,
@@ -15,13 +17,16 @@
 }
 
 .layout {
-    width: 720px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 1000px;
     height: 300px;
-    bottom: 0;
     background-color: #C6C6C6;
     border: solid 1rem;
     border-color: #FFFFFF #373737 #373737 #FFFFFF;
-    padding: 1.5rem;
+    padding: 1rem;
     gap: 0.5rem;
     clip-path: polygon(0 10px,
             10px 10px,
@@ -36,7 +41,19 @@
             0 calc(100% - 10px));
 }
 
+.text {
+    margin: 0.5rem;
+    float: left; 
+}
+
 .gui {
     display: flex;
     flex-direction: row;
+}
+
+.button {
+    margin: 1rem;
+    width: 500;
+    height: 50px;
+    background-color: #FFFFFF;
 }

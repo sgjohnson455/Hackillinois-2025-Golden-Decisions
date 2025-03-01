@@ -23,6 +23,7 @@ a:hover {
 }
 
 body {
+  font-family: 'Macondo';
   margin: 0;
   display: flex;
   place-items: center;
@@ -32,8 +33,17 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 3em;
+  line-height: 0.5;
+  color: #562411;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 2em;
+  line-height: 0.5;
+  color: #373737;
 }
 
 button {

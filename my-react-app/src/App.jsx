@@ -3,13 +3,18 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Textbox from '../src/components/Textbox' 
+import Book from '../src/components/Book'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Textbox />
+      <style>@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');</style>
+      <Book />
+      <Textbox request={"Please give gold"} />
+
+
       {/* <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
