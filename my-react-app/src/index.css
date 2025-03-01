@@ -29,7 +29,11 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-image: linear-gradient(#1A9BD4, #75cceb);
+  background-image: url('./assets/Images/hall.webp');
+  background-color:#001d2c;
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center calc(-125px);
 }
 
 h1 {

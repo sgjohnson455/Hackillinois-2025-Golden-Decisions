@@ -11,7 +11,7 @@ export default function Welcome() {
     }
 
     return (
-        <div style={{backgroundImage: '/workspaces/Hackillinois-2025/my-react-app/src/assets/Images/hall.png'}}>
+        <div style={{backgroundImage: '../src/assets/Images/hall.webp'}}>
             <Book />
             <Stats />
             <Textbox request={"PLEASE GIVE GOLD"} />
