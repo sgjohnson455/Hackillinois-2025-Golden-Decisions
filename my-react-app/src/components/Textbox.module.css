@@ -1,0 +1,42 @@
+.outBox {
+    background-color: black;
+    padding: 0.5rem;
+    clip-path: polygon(0 10px,
+            10px 10px,
+            10px 0,
+            calc(100% - 10px) 0,
+            calc(100% - 10px) 10px,
+            100% 10px, 100% calc(100% - 10px),
+            calc(100% - 10px) calc(100% - 10px),
+            calc(100% - 10px) 100%,
+            10px 100%,
+            10px calc(100% - 10px),
+            0 calc(100% - 10px));
+}
+
+.layout {
+    width: 720px;
+    height: 300px;
+    bottom: 0;
+    background-color: #C6C6C6;
+    border: solid 1rem;
+    border-color: #FFFFFF #373737 #373737 #FFFFFF;
+    padding: 1.5rem;
+    gap: 0.5rem;
+    clip-path: polygon(0 10px,
+            10px 10px,
+            10px 0,
+            calc(100% - 10px) 0,
+            calc(100% - 10px) 10px,
+            100% 10px, 100% calc(100% - 10px),
+            calc(100% - 10px) calc(100% - 10px),
+            calc(100% - 10px) 100%,
+            10px 100%,
+            10px calc(100% - 10px),
+            0 calc(100% - 10px));
+}
+
+.gui {
+    display: flex;
+    flex-direction: row;
+}
