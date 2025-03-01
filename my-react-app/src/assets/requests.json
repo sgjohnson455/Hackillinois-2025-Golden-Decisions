@@ -1,0 +1,30 @@
+[
+    {
+        "id": 0,
+        "description": "",
+        "accept": {
+            "gold": -1,
+            "people": 0,
+            "happiness": 1
+            },
+        "reject": {
+            "gold": -1,
+            "people": 0,
+            "happiness": 1
+            }
+    },
+    {
+        "id": 0,
+        "description": "",
+        "accept": {
+            "gold": -1,
+            "people": 0,
+            "happiness": 1
+            },
+        "reject": {
+            "gold": -1,
+            "people": 0,
+            "happiness": 1
+            }
+    }
+]
