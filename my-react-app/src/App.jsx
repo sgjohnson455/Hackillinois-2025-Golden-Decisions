@@ -12,9 +12,9 @@ function App() {
   return (
     <>
       <style>@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');</style>
-      <Welcome />
-      {/* <Book />
-      <Textbox request={"Please give gold"} /> */}
+      {/* <Welcome /> */}
+      <Book />
+      <Textbox request={"Please give gold"} />
 
 
       {/* <div>
