@@ -6,10 +6,6 @@ import Book from './Book'
 import BookGUI from './BookGUI'
 
 export default function Welcome() {
-    function navigateToPage(page) {
-        window.location.href = page;
-    }
-
     return (
         <div>
             <Book />
