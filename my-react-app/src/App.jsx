@@ -3,9 +3,12 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+
+import Welcome from '../src/components/Welcome'
+import Stats from './components/Stats'
 import Textbox from '../src/components/Textbox' 
 import Book from '../src/components/Book'
-import Welcome from './components/Welcome'
+import BookGUI from './components/BookGUI'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -23,6 +26,10 @@ function App() {
       {/* <Book />
       <Textbox request={"Please give gold"} /> */}
 
+      <Book />
+      <Stats />
+      <Textbox request={"Please give gold"} />
+      {/* <BookGUI /> */}
 
       {/* <div>
         <a href="https://vite.dev" target="_blank">

@@ -14,6 +14,7 @@
         10px 100%,
         10px calc(100% - 10px),
         0 calc(100% - 10px));
+        transform: translateY(11rem);
 }
 
 .layout {
@@ -21,10 +22,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1100px;
-    height: 180px;
+    width: 55rem;
+    height: 10rem;
     background-color: #C6C6C6;
-    border: solid 1rem;
+    border: solid 0.5rem;
     border-color: #FFFFFF #373737 #373737 #FFFFFF;
     padding: 1rem;
     gap: 0.5rem;
@@ -54,16 +55,12 @@
 
 .button {
     margin: 1rem;
-    width: 500;
-    height: 50px;
+    width: 5rem;
+    height: 3rem;
     background-color: #562411;
     color: white;
 }
 
 .button:hover {
     border-color: white;
-}
-
-.textbox {
-    transform: translateY(160px);
 }
