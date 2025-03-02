@@ -17,7 +17,7 @@ export default function Textbox() {
     return (
         <div className={styles.layout}>
             <p className={styles.header}> <u>Request</u> </p>
-            <h2 className={styles.text}>{request.description}</h2>
+            <h2 className={styles.text}>"{request.description}"</h2>
             <div style={{ display: 'flex', flexDirection: 'row', gap: '5rem' }}>
                 <button className={styles.button} id={`YES`} onClick={() => { reqId = updateStats(request.id, true); chooseRequest(reqId) }}>✔</button>
                 <button className={styles.button} id={`NO`} onClick={() => { reqId = updateStats(request.id, false); chooseRequest(reqId) }}>✖</button>
