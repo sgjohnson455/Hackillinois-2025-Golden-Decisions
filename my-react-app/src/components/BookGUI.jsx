@@ -1,5 +1,4 @@
 import styles from './Book.module.css';
-import bookInfo from '../assets/dionysusBook.json'
 
 export default function BookGUI() {
     // pageID = 0;

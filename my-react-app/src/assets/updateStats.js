@@ -69,26 +69,33 @@ export async function updateStats(currRequest = 0, action) {
 }
 
 async function checkWin() {
-    let docBody = document.getElementsByTagName('body');
 
-    if (people === 0) {// continue
-        console.log("NO MORE REQUESTS");
+    if (people < 0) { // no more requests
+        // losing
+        if (gold <= 25) {
+            document.body.style.backgroundImage = "url('./src/assets/Images/lose-nomoney.png')";
+            document.body.style.backgroundPosition = "center calc(0px)";
+        }
+        else if (happiness <= 25) {
+            document.body.style.backgroundImage = "url('./src/assets/Images/lose-badrep.png')";
+            document.body.style.backgroundPosition = "center calc(0px)";
+        }
+
+        // win
+        else {
+            document.body.style.backgroundImage = "url('./src/assets/Images/win.png')";
+            document.body.style.backgroundPosition = "center calc(0px)";
+        }
     }
-    // victoryScreen = document.createElement('div');
-    // victoryScreen.innerText = 'Victory!';
-    // victoryScreen.style.position = 'fixed';
-    // victoryScreen.style.top = '50%';
-    // victoryScreen.style.left = '50%';
-    // victoryScreen.style.transform = 'translate(-50%, -50%)';
-    // victoryScreen.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
-    // victoryScreen.style.color = 'white';
-    // victoryScreen.style.fontSize = '2em';
-    // victoryScreen.style.padding = '20px';
-    // victoryScreen.style.borderRadius = '10px';
-    // victoryScreen.style.zIndex = '999';
-    // document.body.appendChild(victoryScreen);
-    // setTimeout(() => {
-    //     document.body.removeChild(victoryScreen);
-    // }, 1500);
-    // return true;
+
+    // total lose
+    else if (happiness === 0) {
+        document.body.style.backgroundImage = "url('./src/assets/Images/lose-badrep.png')";
+        document.body.style.backgroundPosition = "center calc(0px)";
+    }
+    
+    else if (gold === 0) { // reached losing stage
+        document.body.style.backgroundImage = "url('./src/assets/Images/lose-nomoney.png')";
+        document.body.style.backgroundPosition = "center calc(0px)";
+    }
 }
