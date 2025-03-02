@@ -29,9 +29,9 @@ export default function Welcome() {
             }}>
                 <motion.img
                     className={styles}
-                    src="src\assets\Images\scroll.png"
-                    width='1500px'
-                    height='1000px'
+                    src="src\assets\Images\greek_scroll.png"
+                    width='1200vw'
+                    height='700vh'
                     initial={{ y: '500px', opacity: 0 }}
                     animate={{ y: '-7vh', opacity: 1 }}
                     transition={{ duration: 2, delay: 1 }}>
@@ -46,16 +46,16 @@ export default function Welcome() {
                     <h1><u> Overview </u></h1>
                     <p>
                         1) You, Midas, are the ruler of the kingdom, and your citizens come to you for financial
-                        advice.
+                        requests/advice.
                     </p>
                     <p>
-                        2) As the ruler of the kingdom, you must decide whether you think the advice is good or bad
-                        by choosing either a yes or no option.
+                        2) As the ruler of the kingdom, you must decide whether you think the request/advice is good 
+                        or bad by choosing either a yes or no option.
                     </p>
                     <p>
                         3) You start off with certain metrics, such as <u>happiness</u> and <u>wealth</u>. Happiness
-                        represents how content your people are with your decisions, and wealth represents _____. You
-                        want to keep happiness as high as possible to avoid any negative consequences.
+                        represents how content your people are with your decisions, and wealth represents the amount of
+                        gold you have. You want to keep happiness as high as possible to avoid any negative consequences.
                     </p>
                     <p>
                         4) You must balance happiness and wealth. If any of these go too low, you may face problems

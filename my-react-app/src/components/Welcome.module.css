@@ -15,9 +15,9 @@
 
 .rules {
     position: absolute;
-    top: 24%;
-    max-width: 42vw;
-    font-size: 70%;
+    top: 25%;
+    max-width: 700px;
+    font-size: 65%;
 }
 
 .rules p {
