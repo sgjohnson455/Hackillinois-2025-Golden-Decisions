@@ -47,7 +47,6 @@
     {
         "id": 3,
         "description": "My parents keep nagging me about paying off my credit card in time, but I don't understand the point in that if I'm going to pay it off in my own time. They say that late payments can lower your credit score, but is that really true?",
-        "description": "My parents keep nagging me about paying off my credit card in time, but I don't understand the point in that if I'm going to pay it off in my own time. They say that late payments can lower your credit score, but is that really true?",
         "accept": {
             "gold": 0,
             "people": 0,
@@ -62,7 +61,7 @@
     },
     {
         "id": 4,
-        "description": "Midas! The people say gold flows from your coffers because of your financial wisdom, so let’s make a bet! If you deposit $1,000 in a savings account with an annual interest rate of 3%, will you earn $30 in interest after one year?",
+        "description": "Midas! The people say gold flows from your coffers because of your financial wisdom, so let's make a bet! If you deposit $1,000 in a savings account with an annual interest rate of 3%, will you earn $30 in interest after one year?",
         "accept": {
             "gold": 15,
             "people": 0,
