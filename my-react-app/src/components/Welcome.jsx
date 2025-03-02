@@ -49,7 +49,7 @@ export default function Welcome() {
                         requests/advice.
                     </p>
                     <p>
-                        2) As the ruler of the kingdom, you must decide whether you think the request/advice is good 
+                        2) As the ruler of the kingdom, you must decide whether you think the request/advice is good
                         or bad by choosing either a yes or no option.
                     </p>
                     <p>
@@ -63,7 +63,7 @@ export default function Welcome() {
                     </p>
                 </motion.div>
 
-                <div style={{position: 'absolute', bottom: '17%', display: 'flex', flexDirection: 'row', gap: '5rem', justifyItems: 'center'}}>
+                <div style={{ position: 'absolute', bottom: '17%', display: 'flex', flexDirection: 'row', gap: '5rem', justifyItems: 'center' }}>
                     <motion.button
                         className={styles.button}
                         initial={{ opacity: 0 }}

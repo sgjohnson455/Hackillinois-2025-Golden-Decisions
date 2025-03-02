@@ -15,11 +15,11 @@ export async function setup() {
     }
 
     // button setup
-        // const acceptButton = document.getElementById('#YES');
-        // acceptButton.addEventListener('click', updateStats(requestID, true));
+    // const acceptButton = document.getElementById('#YES');
+    // acceptButton.addEventListener('click', updateStats(requestID, true));
 
-        // const rejectButton = document.getElementById('#NO');
-        // rejectButton.addEventListener('click', updateStats(requestID, false));
+    // const rejectButton = document.getElementById('#NO');
+    // rejectButton.addEventListener('click', updateStats(requestID, false));
 }
 
 // Function to generate a request based on randomization
@@ -31,7 +31,7 @@ export default async function generateRequest() {
         let requestID = uncompletedRequests[randInd];
         completedRequests.push(requestID);
         uncompletedRequests.splice(randInd, 1);
-// console.log(requestID);
+        // console.log(requestID);
         return requestID;
     }
 }
@@ -48,7 +48,7 @@ export async function updateStats(currRequest = 0, action) {
     let peopleStats = document.getElementById('PEOPLE');
     let happinessStats = document.getElementById('HAPPINESS');
 
-    let actionResults; 
+    let actionResults;
 
     if (action) { // user accepts
         actionResults = requests[currRequest]["accept"];
@@ -75,16 +75,19 @@ async function checkWin() {
         if (gold <= 25) {
             document.body.style.backgroundImage = "url('./src/assets/Images/lose-nomoney.png')";
             document.body.style.backgroundPosition = "center calc(0px)";
+            document.body.style.backgroundSize = "65%";
         }
         else if (happiness <= 25) {
             document.body.style.backgroundImage = "url('./src/assets/Images/lose-badrep.png')";
             document.body.style.backgroundPosition = "center calc(0px)";
+            document.body.style.backgroundSize = "65%";
         }
 
         // win
         else {
             document.body.style.backgroundImage = "url('./src/assets/Images/win.png')";
             document.body.style.backgroundPosition = "center calc(0px)";
+            document.body.style.backgroundSize = "65%";
         }
     }
 
@@ -92,10 +95,12 @@ async function checkWin() {
     else if (happiness === 0) {
         document.body.style.backgroundImage = "url('./src/assets/Images/lose-badrep.png')";
         document.body.style.backgroundPosition = "center calc(0px)";
+        document.body.style.backgroundSize = "65%";
     }
-    
+
     else if (gold === 0) { // reached losing stage
         document.body.style.backgroundImage = "url('./src/assets/Images/lose-nomoney.png')";
         document.body.style.backgroundPosition = "center calc(0px)";
+        document.body.style.backgroundSize = "65%";
     }
 }
