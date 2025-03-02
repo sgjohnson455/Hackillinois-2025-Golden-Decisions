@@ -5,6 +5,25 @@
 }
 
 .button {
+    position: absolute;
+    left: 70%;
+    bottom: 20%;
     background-color: #562411;
     color: white;
+}
+
+.rules {
+    position: absolute;
+    top: 23%;
+    max-width: 920px;
+    font-size: 70%;
+}
+
+.rules p {
+    padding-bottom: 10px;
+    line-height: 1;
+}
+
+.rules h1 {
+    padding-bottom: 15px;
 }

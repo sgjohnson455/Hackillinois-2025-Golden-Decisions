@@ -12,25 +12,65 @@ export default function Welcome() {
 
                 <motion.h1
                     className={styles.text}
-                    initial= {{y: 0, fontSize: '120px'}} // starting animation
-                    animate= {{y: -230, fontSize: '90px'}} // ending animation
+                    initial= {{y: '30vh', fontSize: '120px'}} // starting animation
+                    animate= {{y: '-5vh', fontSize: '70px'}} // ending animation
                     transition= {{duration: 2, delay: 1}}>
                         WELCOME
                 </motion.h1>
 
             </motion.div>
 
-            <div>
-                <img src= "../assets/greek_scroll.png"></img>
-            </div>
+            <div style={{
+                height: '73vh', 
+                display: 'flex', 
+                justifyContent: 'center', 
+                alignItems: 'center', 
+                flexDirection: 'column', 
+            }}>
+                <motion.img 
+                    className={styles}
+                    src= "src/assets/greek_scroll.png" 
+                    width='1420px' 
+                    height='660px'
+                    initial= {{y: '500px', opacity: 0}}
+                    animate= {{y: '-7vh', opacity: 1}}
+                    transition= {{duration: 2, delay: 1}}>
+                </motion.img>
 
-            <motion.button 
-                className={styles.button}
-                initial= {{opacity: 0}}
-                animate= {{opacity: 1}}
-                transition= {{duration: 1, delay: 3}}> 
-                    <Link to= "/maingame"> CONTINUE </Link> 
-            </motion.button>
+                <motion.div 
+                    className={styles.rules}
+                    initial= {{opacity: 0}}
+                    animate= {{opacity: 1}}
+                    transition= {{duration: 1, delay: 3}}>
+                        
+                    <h1><u> Overview </u></h1>
+                    <p> 
+                        1) You, Midas, are the ruler of the kingdom, and your citizens come to you for financial 
+                        advice.
+                    </p>
+                    <p>
+                        2) As the ruler of the kingdom, you must decide whether you think the advice is good or bad
+                        by choosing either a yes or no option.
+                    </p>
+                    <p>
+                        3) You start off with certain metrics, such as <u>happiness</u> and <u>wealth</u>. Happiness 
+                        represents how content your people are with your decisions, and wealth represents _____. You
+                        want to keep happiness as high as possible to avoid any negative consequences.
+                    </p>
+                    <p>
+                        4) You must balance happiness and wealth. If any of these go too low, you may face problems
+                        like _____.
+                    </p>
+                </motion.div>
+
+                <motion.button 
+                    className={styles.button}
+                    initial= {{opacity: 0}}
+                    animate= {{opacity: 1}}
+                    transition= {{duration: 1, delay: 4.5}}> 
+                        <Link to= "/maingame"> START </Link> 
+                </motion.button>
+            </div>
         </div> 
     )
 }
