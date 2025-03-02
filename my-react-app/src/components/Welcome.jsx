@@ -59,7 +59,7 @@ export default function Welcome() {
                     </p>
                     <p>
                         4) You must balance happiness and wealth. If any of these go too low, you may face problems
-                        like _____.
+                        like being betrayed by your people or not having enough gold to keep the kingdom running.
                     </p>
                 </motion.div>
 
