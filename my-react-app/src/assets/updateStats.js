@@ -72,12 +72,12 @@ async function checkWin() {
 
     if (people < 0) { // no more requests
         // losing
-        if (gold <= 25) {
+        if (gold <= 15) {
             document.body.style.backgroundImage = "url('./src/assets/Images/lose-nomoney.png')";
             document.body.style.backgroundPosition = "center calc(0px)";
             document.body.style.backgroundSize = "65%";
         }
-        else if (happiness <= 25) {
+        else if (happiness <= 15) {
             document.body.style.backgroundImage = "url('./src/assets/Images/lose-badrep.png')";
             document.body.style.backgroundPosition = "center calc(0px)";
             document.body.style.backgroundSize = "65%";

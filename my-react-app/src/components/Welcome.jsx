@@ -45,8 +45,8 @@ export default function Welcome() {
 
                     <h1><u> Overview </u></h1>
                     <p>
-                        1) You, Midas, are the ruler of the kingdom, and your citizens come to you for financial
-                        requests/advice.
+                        1) You, King Midas, are the ruler of the kingdom Phrygia, and your citizens come to you for financial
+                        requests/advice. Dionysus, the God of Wine, has left you a journal filled with advice in case you get stuck. 
                     </p>
                     <p>
                         2) As the ruler of the kingdom, you must decide whether you think the request/advice is good
@@ -58,7 +58,7 @@ export default function Welcome() {
                         want to keep happiness as high as possible to avoid any negative consequences.
                     </p>
                     <p>
-                        4) You must balance happiness and wealth. If any of these go too low, you may face problems
+                        4) You must balance happiness and wealth. If any of these dwindle too low, you may face problems
                         like being betrayed by your people or not having enough gold to keep the kingdom running.
                     </p>
                 </motion.div>
