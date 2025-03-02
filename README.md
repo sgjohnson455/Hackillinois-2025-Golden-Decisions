@@ -3,7 +3,7 @@
 <sup> Easy Page View Link <a href="https://95jkkh64-4321.use.devtunnels.ms/" target="_blank">here</a>.
 
 ## 🚀 About
-This Git Repository is a showcase of the minigame Golden Decisions.
+This Git Repository is a showcase of the minigame, _Golden Decisions_.
 
 Languages: 
 - HTML, CSS, JavaScript <br>
