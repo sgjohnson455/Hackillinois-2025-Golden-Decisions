@@ -57,6 +57,7 @@
     /* margin: 1rem; */
     width: 5rem;
     height: 3rem;
+    border-radius: 0px;
     background-color: #837229;
     color: white;
     -webkit-user-select: none; /* Safari */
