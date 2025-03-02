@@ -5,47 +5,47 @@ import { motion } from 'framer-motion';
 export default function Welcome() {
     return (
         <div>
-            <motion.div 
-                initial= {{opacity: 0}}
-                animate= {{opacity: 1}}
-                transition={{duration: 1}}>
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1 }}>
 
                 <motion.h1
                     className={styles.text}
-                    initial= {{y: '30vh', fontSize: '120px'}} // starting animation
-                    animate= {{y: '-5vh', fontSize: '70px'}} // ending animation
-                    transition= {{duration: 2, delay: 1}}>
-                        WELCOME
+                    initial={{ y: '30vh', fontSize: '120px' }} // starting animation
+                    animate={{ y: '-5vh', fontSize: '70px' }} // ending animation
+                    transition={{ duration: 2, delay: 1 }}>
+                    WELCOME
                 </motion.h1>
 
             </motion.div>
 
             <div style={{
-                height: '73vh', 
-                display: 'flex', 
-                justifyContent: 'center', 
-                alignItems: 'center', 
-                flexDirection: 'column', 
+                height: '70vh',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                flexDirection: 'column',
             }}>
-                <motion.img 
+                <motion.img
                     className={styles}
-                    src= "src/assets/greek_scroll.png" 
-                    width='1420px' 
-                    height='660px'
-                    initial= {{y: '500px', opacity: 0}}
-                    animate= {{y: '-7vh', opacity: 1}}
-                    transition= {{duration: 2, delay: 1}}>
+                    src="src\assets\Images\scroll.png"
+                    width='1500px'
+                    height='1000px'
+                    initial={{ y: '500px', opacity: 0 }}
+                    animate={{ y: '-7vh', opacity: 1 }}
+                    transition={{ duration: 2, delay: 1 }}>
                 </motion.img>
 
-                <motion.div 
+                <motion.div
                     className={styles.rules}
-                    initial= {{opacity: 0}}
-                    animate= {{opacity: 1}}
-                    transition= {{duration: 1, delay: 3}}>
-                        
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1, delay: 3 }}>
+
                     <h1><u> Overview </u></h1>
-                    <p> 
-                        1) You, Midas, are the ruler of the kingdom, and your citizens come to you for financial 
+                    <p>
+                        1) You, Midas, are the ruler of the kingdom, and your citizens come to you for financial
                         advice.
                     </p>
                     <p>
@@ -53,7 +53,7 @@ export default function Welcome() {
                         by choosing either a yes or no option.
                     </p>
                     <p>
-                        3) You start off with certain metrics, such as <u>happiness</u> and <u>wealth</u>. Happiness 
+                        3) You start off with certain metrics, such as <u>happiness</u> and <u>wealth</u>. Happiness
                         represents how content your people are with your decisions, and wealth represents _____. You
                         want to keep happiness as high as possible to avoid any negative consequences.
                     </p>
@@ -63,14 +63,14 @@ export default function Welcome() {
                     </p>
                 </motion.div>
 
-                <motion.button 
+                <motion.button
                     className={styles.button}
-                    initial= {{opacity: 0}}
-                    animate= {{opacity: 1}}
-                    transition= {{duration: 1, delay: 4.5}}> 
-                        <Link to= "/maingame"> START </Link> 
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1, delay: 4.5 }}>
+                    <Link to="/maingame"> START </Link>
                 </motion.button>
             </div>
-        </div> 
+        </div>
     )
 }
