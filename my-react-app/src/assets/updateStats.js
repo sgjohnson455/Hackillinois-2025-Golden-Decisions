@@ -76,6 +76,7 @@ async function checkWin() {
             document.body.style.backgroundImage = "url('./src/assets/Images/lose-nomoney.png')";
             document.body.style.backgroundPosition = "center calc(0px)";
             document.body.style.backgroundSize = "65%";
+            document.getElementById('#MINIGAME').style.visibility = "hidden";
         }
         else if (happiness <= 15) {
             document.body.style.backgroundImage = "url('./src/assets/Images/lose-badrep.png')";
@@ -92,15 +93,17 @@ async function checkWin() {
     }
 
     // total lose
-    else if (happiness === 0) {
+    else if (happiness <= 0) {
         document.body.style.backgroundImage = "url('./src/assets/Images/lose-badrep.png')";
         document.body.style.backgroundPosition = "center calc(0px)";
         document.body.style.backgroundSize = "65%";
+        document.getElementById('#MINIGAME').style.visibility = "hidden";
     }
 
-    else if (gold === 0) { // reached losing stage
+    else if (gold <= 0) { // reached losing stage
         document.body.style.backgroundImage = "url('./src/assets/Images/lose-nomoney.png')";
         document.body.style.backgroundPosition = "center calc(0px)";
         document.body.style.backgroundSize = "65%";
+        document.getElementById('#MINIGAME').style.visibility = "hidden";
     }
 }
