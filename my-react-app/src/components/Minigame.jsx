@@ -7,7 +7,7 @@ import BookGUI from './BookGUI'
 
 export default function Welcome() {
     return (
-        <div>
+        <div style={{backgroundImage: '../src/assets/Images/hall.webp'}}>
             <Book />
             <Stats />
             <Textbox request={"PLEASE GIVE GOLD"} />
