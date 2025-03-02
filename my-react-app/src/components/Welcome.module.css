@@ -1,5 +1,5 @@
 .text {
-    color: #562411;
+    color: red;
     font-size: 120px;
     text-decoration: none;
 }
@@ -27,3 +27,4 @@
 .rules h1 {
     padding-bottom: 15px;
 }
+

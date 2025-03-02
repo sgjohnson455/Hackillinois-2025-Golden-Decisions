@@ -17,16 +17,16 @@
     background-color: black;
     padding: 0.5rem;
     clip-path: polygon(0 10px,
-            10px 10px,
-            10px 0,
-            calc(100% - 10px) 0,
-            calc(100% - 10px) 10px,
-            100% 10px, 100% calc(100% - 10px),
-            calc(100% - 10px) calc(100% - 10px),
-            calc(100% - 10px) 100%,
-            10px 100%,
-            10px calc(100% - 10px),
-            0 calc(100% - 10px));
+        10px 10px,
+        10px 0,
+        calc(100% - 10px) 0,
+        calc(100% - 10px) 10px,
+        100% 10px, 100% calc(100% - 10px),
+        calc(100% - 10px) calc(100% - 10px),
+        calc(100% - 10px) 100%,
+        10px 100%,
+        10px calc(100% - 10px),
+        0 calc(100% - 10px));
 }
 
 .layout {
@@ -41,16 +41,16 @@
     padding: 1rem;
     gap: 0.5rem;
     clip-path: polygon(0 10px,
-            10px 10px,
-            10px 0,
-            calc(100% - 10px) 0,
-            calc(100% - 10px) 10px,
-            100% 10px, 100% calc(100% - 10px),
-            calc(100% - 10px) calc(100% - 10px),
-            calc(100% - 10px) 100%,
-            10px 100%,
-            10px calc(100% - 10px),
-            0 calc(100% - 10px));
+        10px 10px,
+        10px 0,
+        calc(100% - 10px) 0,
+        calc(100% - 10px) 10px,
+        100% 10px, 100% calc(100% - 10px),
+        calc(100% - 10px) calc(100% - 10px),
+        calc(100% - 10px) 100%,
+        10px 100%,
+        10px calc(100% - 10px),
+        0 calc(100% - 10px));
 }
 
 .text {
