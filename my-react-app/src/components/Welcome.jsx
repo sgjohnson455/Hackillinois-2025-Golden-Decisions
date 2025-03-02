@@ -54,8 +54,8 @@ export default function Welcome() {
                     </p>
                     <p>
                         3) You start off with certain metrics, such as <u>happiness</u> and <u>wealth</u>. Happiness
-                        represents how content your people are with your decisions, and wealth represents the amount of
-                        gold you have. You want to keep happiness as high as possible to avoid any negative consequences.
+                        represents how content your people are with your decisions, and wealth represents how much gold you currently possess. You
+                        want to keep happiness as high as possible to avoid any negative consequences.
                     </p>
                     <p>
                         4) You must balance happiness and wealth. If any of these go too low, you may face problems

@@ -1,19 +1,17 @@
 import requests from './requests.json'
 
 // global variables
-let uncompletedRequests = new Set();
-let completedRequests = new Set();
+let uncompletedRequests = [];
+let completedRequests = [];
 let gold = 100;
-let people = 100;
-let happniess = 100;
+let people = requests.length;
+let happiness = 100;
 
-// Function to generate a request based on what 
-// Runs until the end of the game
-export default async function generateRequest() {
-    console.log("HELLO WORLD FROM GENERATE");
+// Setup Function - call once
+export async function setup() {
     // initializing set
-    for (let i = 0; i <= 100; i++) {
-        uncompletedRequests.add(i);
+    for (let i = 0; i < people; i++) {
+        uncompletedRequests.push(i);
     }
 
     // button setup
@@ -22,14 +20,18 @@ export default async function generateRequest() {
 
         // const rejectButton = document.getElementById('#NO');
         // rejectButton.addEventListener('click', updateStats(requestID, false));
+}
 
+// Function to generate a request based on randomization
+// Runs until the end of the game
+export default async function generateRequest() {
     // run while there are still requests
-    while (uncompletedRequests.size > 0) {
-        let requestID = Math.floor(Math.random() * (uncompletedRequests.size + 1));
-        completedRequests.add(requestID);
-        uncompletedRequests.delete(requestID);
-
-        console.log(requestID);
+    while (uncompletedRequests.length > 0) {
+        let randInd = Math.floor(Math.random() * (uncompletedRequests.length));
+        let requestID = uncompletedRequests[randInd];
+        completedRequests.push(requestID);
+        uncompletedRequests.splice(randInd, 1);
+// console.log(requestID);
         return requestID;
     }
 }
@@ -37,9 +39,10 @@ export default async function generateRequest() {
 // Function to update the stats on the webpage depending on what the user selected in reponse to a request
 // @param: currRequest - an int containing the ID of the request that was prompted
 // @param: action - a boolean representing whether the user accepts (true) or rejects (false) the request
-export async function updateStats(currRequest, action) {
-    currRequest = 0;
-    action = true;
+export async function updateStats(currRequest = 0, action) {
+    // console.log(uncompletedRequests);
+    // console.log(completedRequests);
+    // console.log(currRequest);
 
     let goldStats = document.getElementById('GOLD');
     let peopleStats = document.getElementById('PEOPLE');
@@ -53,8 +56,7 @@ export async function updateStats(currRequest, action) {
     else { // user rejects
         actionResults = requests[currRequest]["reject"];
     }
-console.log(actionResults);
-console.log(currRequest);
+
     gold = parseInt(goldStats.innerText) + actionResults["gold"];
     goldStats.innerText = gold;
     people = parseInt(peopleStats.innerText) - 1;
@@ -63,12 +65,15 @@ console.log(currRequest);
     happinessStats.innerText = happiness;
 
     checkWin();
-    generateRequest();
+    return generateRequest();
 }
 
 async function checkWin() {
-    if (people > 0) // continue
-        console.log("YAY");
+    let docBody = document.getElementsByTagName('body');
+
+    if (people === 0) {// continue
+        console.log("NO MORE REQUESTS");
+    }
     // victoryScreen = document.createElement('div');
     // victoryScreen.innerText = 'Victory!';
     // victoryScreen.style.position = 'fixed';

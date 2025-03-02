@@ -61,7 +61,7 @@
     },
     {
         "id": 4,
-        "description": "Midas! The people say gold flows from your coffers because of your financial wisdom, so let’s make a bet! If you deposit $1,000 in a savings account with an annual interest rate of 3%, will you earn $30 in interest after one year?",
+        "description": "Midas! The people say gold flows from your coffers because of your financial wisdom, so let's make a bet! If you deposit $1,000 in a savings account with an annual interest rate of 3%, will you earn $30 in interest after one year?",
         "accept": {
             "gold": 15,
             "people": 0,
@@ -198,7 +198,7 @@
         "id": 13,
         "description": "I heard that having a high credit score can help you qualify for loans with better interest rates. Is that true?",
         "accept": {
-            "gold": 0,
+            "gold": -1,
             "people": 0,
             "happiness": 5
             },
@@ -211,7 +211,7 @@
     },
     {
         "id": 14,
-        "description": "I'm gonna test you on some financial math problems, so I hope you know the answer to this question! You take out a loan for $10,000 at an interest rate of 6% per year for 5 years. Will your monthly payment approximately be $100 for a fixed-rate loan? (Math problems will earn you gold.)",
+        "description": "",
         "accept": {
             "gold": -5,
             "people": 0,
