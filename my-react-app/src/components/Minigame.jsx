@@ -5,13 +5,13 @@ import Stats from './Stats'
 import Textbox from './Textbox' 
 import Book from './Book'
 import BookGUI from './BookGUI'
-import generateRequest from '../assets/updateStats.js'
+import generateRequest, {setup} from '../assets/updateStats.js'
 import requests from '../assets/requests.json'
 
 export default function Minigame() {
-    let reqID;
+    let reqID = 0;
     useEffect(() => {
-        reqID = generateRequest(); console.log(reqID);
+        setup(); reqID = generateRequest();
     }, []);
 
     return (
