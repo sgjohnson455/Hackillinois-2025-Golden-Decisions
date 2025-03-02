@@ -9,13 +9,11 @@ export default function Textbox() {
     let reqId = 0; // temp variable
 
     const [stateID, setID] = useState(0); // using states to update the textbox whenever a decision has been chosen
-
-    async function chooseRequest(req) {
+    async function chooseRequest(req) { // helper function
         setID(await req);
     }
-
-    let request = requests.find(item => item.id === stateID);
-    console.log(request);
+    let request = requests.find(item => item.id === stateID); // grabbing specific request item from json
+    // console.log(request);
     return (
         <div className={styles.layout}>
             <p className={styles.text}> <u>Request</u> </p>

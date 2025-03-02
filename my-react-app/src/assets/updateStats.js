@@ -31,7 +31,7 @@ export default async function generateRequest() {
         let requestID = uncompletedRequests[randInd];
         completedRequests.push(requestID);
         uncompletedRequests.splice(randInd, 1);
-console.log(requestID);
+// console.log(requestID);
         return requestID;
     }
 }
@@ -40,9 +40,9 @@ console.log(requestID);
 // @param: currRequest - an int containing the ID of the request that was prompted
 // @param: action - a boolean representing whether the user accepts (true) or rejects (false) the request
 export async function updateStats(currRequest = 0, action) {
-    console.log(uncompletedRequests);
-    console.log(completedRequests);
-    console.log(currRequest);
+    // console.log(uncompletedRequests);
+    // console.log(completedRequests);
+    // console.log(currRequest);
 
     let goldStats = document.getElementById('GOLD');
     let peopleStats = document.getElementById('PEOPLE');

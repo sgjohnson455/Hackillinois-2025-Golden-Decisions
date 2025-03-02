@@ -32,7 +32,7 @@ export default function Minigame() {
         <div style={{backgroundImage: '../src/assets/Images/hall.webp'}}>
             <Book />
             <Stats />
-            <Textbox />
+            <Textbox id={`#TEXTBOX`} />
         </div> 
     )
 }
