@@ -63,13 +63,23 @@ export default function Welcome() {
                     </p>
                 </motion.div>
 
-                <motion.button
-                    className={styles.button}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 1, delay: 4.5 }}>
-                    <Link to="/maingame"> START </Link>
-                </motion.button>
+                <div style={{position: 'absolute', bottom: '17%', display: 'flex', flexDirection: 'row', gap: '5rem', justifyItems: 'center'}}>
+                    <motion.button
+                        className={styles.button}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1, delay: 4.5 }}>
+                        <Link to="/maingame"> START </Link>
+                    </motion.button>
+
+                    <motion.button
+                        className={styles.button}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1, delay: 4.5 }}>
+                        <Link to="https://drive.google.com/file/d/13aUvdF5YABblhYzETMN3uIkw-wMMv22L/view?usp=sharing"> BOOK </Link>
+                    </motion.button>
+                </div>
             </div>
         </div>
     )
