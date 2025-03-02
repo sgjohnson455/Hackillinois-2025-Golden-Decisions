@@ -43,7 +43,7 @@ export default function Welcome() {
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1, delay: 3 }}>
 
-                    <h1><u> Overview </u></h1>
+                    <h1><u> Golden Decisions - Overview </u></h1>
                     <p>
                         1) You are King Midas, ruler of Phyrgia. As King, it is your job to manage certain metrics, such as <u>happiness</u> and <u>wealth</u>. Happiness
                         represents how content your people are with your decisions, and wealth represents how much gold you currently possess. You
@@ -73,7 +73,7 @@ export default function Welcome() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, delay: 4.5 }}>
-                        <Link to="https://drive.google.com/file/d/13aUvdF5YABblhYzETMN3uIkw-wMMv22L/view?usp=sharing"> BOOK </Link>
+                        <Link to="https://drive.google.com/file/d/1jZlzbTP4TEQH9o-JAwhXdQVQnGZ7JbQQ/view?usp=sharing"> LETTER </Link>
                     </motion.button>
                 </div>
             </div>
