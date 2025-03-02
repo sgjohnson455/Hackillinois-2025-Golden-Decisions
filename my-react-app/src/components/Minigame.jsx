@@ -6,7 +6,7 @@ import Stats from './Stats'
 import Textbox from './Textbox' 
 import Book from './Book'
 import BookGUI from './BookGUI'
-import generateRequest, {setup} from '../assets/updateStats.js'
+import {setup} from '../assets/updateStats.js'
 import requests from '../assets/requests.json'
 
 export default function Minigame() {
@@ -14,18 +14,25 @@ export default function Minigame() {
         setup();
     }, []);
 
-    const [stateID, setID] = useState(0);
-    console.log("ID");
-    console.log({stateID});
-    // reqITEM = requests.find(item => item.id === stateID);
+    // const [stateID, setID] = useState(0);
+
+    // function chooseRequest(req) {
+    //     setID(req);
+    // }
+
+    // console.log("ID");
+    // console.log(stateID);
+    // console.log(stateID["value"]);
+
+    // let reqITEM = requests.find(item => item.id === stateID);
+    // let reqITEM = requests.find(item => item.id === 0);
     // console.log(reqITEM);
     
     return (
         <div style={{backgroundImage: '../src/assets/Images/hall.webp'}}>
             <Book />
             <Stats />
-            <p>{stateID}</p>
-            <Textbox request={requests.find(item => item.id === stateID)} updateID={setID} />
+            <Textbox />
         </div> 
     )
 }

@@ -8,7 +8,7 @@ import Welcome from '../src/components/Welcome'
 import Minigame from '../src/components/Minigame'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
