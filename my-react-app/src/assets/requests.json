@@ -268,7 +268,7 @@
             "happiness": -1
             },
         "answer": 1
-    }
+    },
     {
         "id": 18,
         "description": "King Midas, you fraud! If you take out a loan of $15,000 at an interest rate of 5% for 3 years, will you pay $2,250 in interest by the end of the loan term? Assuming simple interest.",
@@ -283,7 +283,7 @@
             "happiness": -1
             },
         "answer": 1
-    }
+    },
     {
         "id": 19,
         "description": "I've heard that defaulting on a loan can negatively impact your credit score. Is that true?",
