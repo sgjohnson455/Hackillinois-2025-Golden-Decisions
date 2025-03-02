@@ -45,22 +45,18 @@ export default function Welcome() {
 
                     <h1><u> Overview </u></h1>
                     <p>
-                        1) You, King Midas, are the ruler of the kingdom Phrygia, and your citizens come to you for financial
-                        requests/advice. Dionysus, the God of Wine, has left you a journal filled with advice in case you get stuck. 
-                    </p>
-                    <p>
-                        2) As the ruler of the kingdom, you must decide whether you think the request/advice is good
-                        or bad by choosing either a yes or no option.
-                    </p>
-                    <p>
-                        3) You start off with certain metrics, such as <u>happiness</u> and <u>wealth</u>. Happiness
+                        1) You are King Midas, ruler of Phyrgia. As King, it is your job to manage certain metrics, such as <u>happiness</u> and <u>wealth</u>. Happiness
                         represents how content your people are with your decisions, and wealth represents how much gold you currently possess. You
                         want to keep happiness as high as possible to avoid any negative consequences.
                     </p>
                     <p>
-                        4) You must balance happiness and wealth. If any of these dwindle too low, you may face problems
-                        like being betrayed by your people or not having enough gold to keep the kingdom running.
+                        2) As the ruler of the kingdom, you get first and final say on any queries your people have come to you with. This is a system that has worked out greatly for you.
+                        That is, until Dionysus gifted you the Golden Touch.
                     </p>
+                    <p>
+                        3) Manage your people and their growing perception of your wealth, using financial literacy skills!
+                    </p>
+                    <p>          ** Fun fact, financial literacy rates for adults sits at around 50%</p>
                 </motion.div>
 
                 <div style={{ position: 'absolute', bottom: '17%', display: 'flex', flexDirection: 'row', gap: '5rem', justifyItems: 'center' }}>
