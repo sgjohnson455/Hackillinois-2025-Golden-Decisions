@@ -121,7 +121,7 @@
     },
     {
         "id": 8,
-        "description": "I always hear about credit scores, but is it true that your credit score is based on your income and job history?",
+        "description": "I always hear about credit scores, but is it true that your credit score is based ONLY on your income and job history?",
         "accept": {
             "gold": 0,
             "people": 0,
