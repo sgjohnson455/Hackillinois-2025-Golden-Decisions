@@ -30,7 +30,7 @@ export default function Minigame() {
     // console.log(reqITEM);
     
     return (
-        <div style={{backgroundImage: '../src/assets/Images/hall.webp'}}>
+        <div id={`#MINIGAME`} style={{visibility: "visible", backgroundImage: '../src/assets/Images/hall.webp'}}>
             <Book />
             <Stats />
             <Textbox id={`#TEXTBOX`} />

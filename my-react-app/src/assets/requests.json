@@ -150,7 +150,7 @@
         "answer": 1
     },
     {
-        "id": 5,
+        "id": 10,
         "description": "My friend and I were thinking about opening a joint account, but she said joint accounts are only available for married couples. Is that really the case, King Midas?",
         "accept": {
             "gold": 0,
@@ -225,7 +225,7 @@
         "answer": 1
     },
     {
-        "id": 5,
+        "id": 15,
         "description": "I heard that having a high credit score can help you qualify for loans with better interest rates. Is that true?",
         "accept": {
             "gold": 0,
