@@ -4,13 +4,13 @@ import requests from './requests.json'
 let uncompletedRequests = [];
 let completedRequests = [];
 let gold = 100;
-let people = 100;
+let people = requests.length;
 let happiness = 100;
 
 // Setup Function - call once
 export async function setup() {
     // initializing set
-    for (let i = 0; i <= 20; i++) {
+    for (let i = 0; i < people; i++) {
         uncompletedRequests.push(i);
     }
 
@@ -31,7 +31,7 @@ export default async function generateRequest() {
         let requestID = uncompletedRequests[randInd];
         completedRequests.push(requestID);
         uncompletedRequests.splice(randInd, 1);
-
+console.log(requestID);
         return requestID;
     }
 }
@@ -39,13 +39,10 @@ export default async function generateRequest() {
 // Function to update the stats on the webpage depending on what the user selected in reponse to a request
 // @param: currRequest - an int containing the ID of the request that was prompted
 // @param: action - a boolean representing whether the user accepts (true) or rejects (false) the request
-export async function updateStats(currRequest, action) {
-    // currRequest = 0;
-    action = true;
-
-    // console.log(uncompletedRequests);
-    // console.log(completedRequests);
-    // console.log(currRequest);
+export async function updateStats(currRequest = 0, action) {
+    console.log(uncompletedRequests);
+    console.log(completedRequests);
+    console.log(currRequest);
 
     let goldStats = document.getElementById('GOLD');
     let peopleStats = document.getElementById('PEOPLE');
@@ -74,9 +71,8 @@ export async function updateStats(currRequest, action) {
 async function checkWin() {
     let docBody = document.getElementsByTagName('body');
 
-    if (people > 0) {// continue
-        
-        // docBody.backgroundImage = url('')
+    if (people === 0) {// continue
+        console.log("NO MORE REQUESTS");
     }
     // victoryScreen = document.createElement('div');
     // victoryScreen.innerText = 'Victory!';
