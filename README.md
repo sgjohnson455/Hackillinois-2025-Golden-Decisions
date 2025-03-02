@@ -22,7 +22,7 @@ Developed by:
 
 - [Sara Johnson](https://github.com/sgjohnson455)
 
-- [Rachel Li]() 
+- [Rachel Li](https://github.com/rli60) 
 
 - [Josephine Lee](https://github.com/abyssaldragonz) 
 
