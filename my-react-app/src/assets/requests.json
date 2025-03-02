@@ -78,7 +78,7 @@
         "id": 5,
         "description": "King Midas, forgive my question, but I am not great with math. If my credit limit on a credit card is $5,000, and I've used $2,000 of my available credit, is my credit utilization 30%? If you can help me sir, I can pay…!",
         "accept": {
-            "gold": -30,
+            "gold": -40,
             "people": 0,
             "happiness": -5
         },
@@ -168,7 +168,7 @@
         "id": 11,
         "description": "Hi King Midas, me again. If you invest $2,000 in a Certificate of Deposit (CD) for 2 years at an annual interest rate of 5%, will the total amount in your CD after 2 years be $2500, assuming simple interest?",
         "accept": {
-            "gold": -30,
+            "gold": -50,
             "people": 0,
             "happiness": -5
         },
@@ -188,7 +188,7 @@
             "happiness": 5
         },
         "reject": {
-            "gold": -30,
+            "gold": -35,
             "people": 0,
             "happiness": -5
         },
@@ -243,7 +243,7 @@
         "id": 16,
         "description": "King Midas, asking for a friend that is not me,… if you take out a loan for $5,000 at an interest rate of 6% per year for 5 years, will your monthly payment approximately be $50 for a fixed-rate loan?",
         "accept": {
-            "gold": -30,
+            "gold": -45,
             "people": 0,
             "happiness": -5
         },
@@ -263,7 +263,7 @@
             "happiness": 5
         },
         "reject": {
-            "gold": -30,
+            "gold": -50,
             "people": 0,
             "happiness": -5
         },
