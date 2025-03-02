@@ -12,6 +12,7 @@ import requests from '../assets/requests.json'
 export default function Minigame() {
     useEffect(() => {
         setup();
+        document.body.style.backgroundImage = "url('./src/assets/Images/hall.webp')";
     }, []);
 
     // const [stateID, setID] = useState(0);
