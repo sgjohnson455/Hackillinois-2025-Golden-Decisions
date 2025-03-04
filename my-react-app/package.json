@@ -2,7 +2,7 @@
   "name": "golden-decisions",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://github.com/sgjohnson455/golden-decisions.git",
+  "homepage": "https://sgjohnson455.github.io/Hackillinois-2025-Golden-Decisions",
   "type": "module",
   "scripts": {
     "dev": "vite",
