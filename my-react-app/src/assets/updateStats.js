@@ -15,11 +15,11 @@ export async function setup() {
     }
 
     // button setup
-        // const acceptButton = document.getElementById('#YES');
-        // acceptButton.addEventListener('click', updateStats(requestID, true));
+    // const acceptButton = document.getElementById('#YES');
+    // acceptButton.addEventListener('click', updateStats(requestID, true));
 
-        // const rejectButton = document.getElementById('#NO');
-        // rejectButton.addEventListener('click', updateStats(requestID, false));
+    // const rejectButton = document.getElementById('#NO');
+    // rejectButton.addEventListener('click', updateStats(requestID, false));
 }
 
 // Function to generate a request based on randomization
@@ -31,7 +31,7 @@ export default async function generateRequest() {
         let requestID = uncompletedRequests[randInd];
         completedRequests.push(requestID);
         uncompletedRequests.splice(randInd, 1);
-// console.log(requestID);
+        // console.log(requestID);
         return requestID;
     }
 }
@@ -48,7 +48,7 @@ export async function updateStats(currRequest = 0, action) {
     let peopleStats = document.getElementById('PEOPLE');
     let happinessStats = document.getElementById('HAPPINESS');
 
-    let actionResults; 
+    let actionResults;
 
     if (action) { // user accepts
         actionResults = requests[currRequest]["accept"];
@@ -69,26 +69,41 @@ export async function updateStats(currRequest = 0, action) {
 }
 
 async function checkWin() {
-    let docBody = document.getElementsByTagName('body');
 
-    if (people === 0) {// continue
-        console.log("NO MORE REQUESTS");
+    if (people < 0) { // no more requests
+        // losing
+        if (gold <= 15) {
+            document.body.style.backgroundImage = "url('./src/assets/Images/lose-nomoney.png')";
+            document.body.style.backgroundPosition = "center calc(0px)";
+            document.body.style.backgroundSize = "65%";
+            document.getElementById('#MINIGAME').style.visibility = "hidden";
+        }
+        else if (happiness <= 15) {
+            document.body.style.backgroundImage = "url('./src/assets/Images/lose-badrep.png')";
+            document.body.style.backgroundPosition = "center calc(0px)";
+            document.body.style.backgroundSize = "65%";
+        }
+
+        // win
+        else {
+            document.body.style.backgroundImage = "url('./src/assets/Images/win.png')";
+            document.body.style.backgroundPosition = "center calc(0px)";
+            document.body.style.backgroundSize = "65%";
+        }
     }
-    // victoryScreen = document.createElement('div');
-    // victoryScreen.innerText = 'Victory!';
-    // victoryScreen.style.position = 'fixed';
-    // victoryScreen.style.top = '50%';
-    // victoryScreen.style.left = '50%';
-    // victoryScreen.style.transform = 'translate(-50%, -50%)';
-    // victoryScreen.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
-    // victoryScreen.style.color = 'white';
-    // victoryScreen.style.fontSize = '2em';
-    // victoryScreen.style.padding = '20px';
-    // victoryScreen.style.borderRadius = '10px';
-    // victoryScreen.style.zIndex = '999';
-    // document.body.appendChild(victoryScreen);
-    // setTimeout(() => {
-    //     document.body.removeChild(victoryScreen);
-    // }, 1500);
-    // return true;
+
+    // total lose
+    else if (happiness <= 0) {
+        document.body.style.backgroundImage = "url('./src/assets/Images/lose-badrep.png')";
+        document.body.style.backgroundPosition = "center calc(0px)";
+        document.body.style.backgroundSize = "65%";
+        document.getElementById('#MINIGAME').style.visibility = "hidden";
+    }
+
+    else if (gold <= 0) { // reached losing stage
+        document.body.style.backgroundImage = "url('./src/assets/Images/lose-nomoney.png')";
+        document.body.style.backgroundPosition = "center calc(0px)";
+        document.body.style.backgroundSize = "65%";
+        document.getElementById('#MINIGAME').style.visibility = "hidden";
+    }
 }

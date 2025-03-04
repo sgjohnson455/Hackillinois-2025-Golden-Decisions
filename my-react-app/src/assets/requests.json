@@ -5,13 +5,13 @@
         "accept": {
             "gold": 0,
             "people": 0,
-            "happiness": -10
-            },
+            "happiness": -20
+        },
         "reject": {
             "gold": 0,
             "people": 0,
             "happiness": 5
-            },
+        },
         "answer": 0
     },
     {
@@ -21,12 +21,12 @@
             "gold": 0,
             "people": 0,
             "happiness": 5
-            },
+        },
         "reject": {
             "gold": 0,
             "people": 0,
-            "happiness": -10
-            },
+            "happiness": -20
+        },
         "answer": 1
     },
     {
@@ -35,13 +35,13 @@
         "accept": {
             "gold": 0,
             "people": 0,
-            "happiness": -10
-            },
+            "happiness": -20
+        },
         "reject": {
             "gold": 0,
             "people": 0,
             "happiness": 5
-            },
+        },
         "answer": 0
     },
     {
@@ -51,253 +51,252 @@
             "gold": 0,
             "people": 0,
             "happiness": 5
-            },
+        },
         "reject": {
             "gold": 0,
             "people": 0,
-            "happiness": -10
-            },
+            "happiness": -20
+        },
         "answer": 1
     },
     {
         "id": 4,
         "description": "Midas! The people say gold flows from your coffers because of your financial wisdom, so let's make a bet! If you deposit $1,000 in a savings account with an annual interest rate of 3%, will you earn $30 in interest after one year?",
         "accept": {
-            "gold": 15,
+            "gold": 5,
             "people": 0,
             "happiness": 5
-            },
+        },
         "reject": {
-            "gold": -15,
+            "gold": -30,
             "people": 0,
-            "happiness": -15
-            },
+            "happiness": -5
+        },
         "answer": 1
     },
     {
         "id": 5,
         "description": "King Midas, forgive my question, but I am not great with math. If my credit limit on a credit card is $5,000, and I've used $2,000 of my available credit, is my credit utilization 30%? If you can help me sir, I can pay…!",
         "accept": {
-            "gold": -15,
+            "gold": -40,
             "people": 0,
-            "happiness": -10
-            },
+            "happiness": -5
+        },
         "reject": {
-            "gold": 15,
+            "gold": 5,
             "people": 0,
             "happiness": 5
-            },
+        },
         "answer": 0
     },
     {
         "id": 6,
-        "description": "Hi King Midas, I always hear about credit scores, but is it true that your credit score is based on your income and job history?",
+        "description": "My mother told me that a credit score of 850 is considered the lowest possible score, is this true? I think I want to trust you more than my mom…",
         "accept": {
             "gold": 0,
             "people": 0,
-            "happiness": -10
-            },
+            "happiness": -20
+        },
         "reject": {
             "gold": 0,
             "people": 0,
             "happiness": 5
-            },
+        },
         "answer": 0
     },
     {
         "id": 7,
-        "description": "I’ve heard that defaulting on a loan can negatively impact your credit score. Is that true?",
+        "description": "Hello, King! I just learned about CDs in school, but I didn’t really pay attention. Are CDs a certificate of deposit, and do they require you to leave your money in the account for a fixed term?",
         "accept": {
             "gold": 0,
             "people": 0,
             "happiness": 5
-            },
+        },
         "reject": {
             "gold": 0,
             "people": 0,
-            "happiness": -10
-            },
+            "happiness": -20
+        },
         "answer": 1
     },
     {
         "id": 8,
-        "description": "My friend and I were thinking about opening a joint account, but she said joint accounts are only available for married couples. Is that really the case, king?",
+        "description": "I always hear about credit scores, but is it true that your credit score is based ONLY on your income and job history?",
         "accept": {
             "gold": 0,
             "people": 0,
-            "happiness": -10
-            },
+            "happiness": -20
+        },
         "reject": {
             "gold": 0,
             "people": 0,
             "happiness": 5
-            },
+        },
         "answer": 0
     },
     {
         "id": 9,
-        "description": "Hi King Midas, me again. If you invest $2,000 in a Certificate of Deposit (CD) for 2 years at an annual interest rate of 5%, will the total amount in your CD after 2 years be $2500, assuming simple interest?",
+        "description": "I've heard that defaulting on a loan can negatively impact your credit score. Is that true?",
         "accept": {
-            "gold": -15,
-            "people": 0,
-            "happiness": -10
-            },
-        "reject": {
-            "gold": 15,
+            "gold": 0,
             "people": 0,
             "happiness": 5
-            },
-        "answer": 0
-    },
-    {
-        "id": 10,
-        "description": "I'm gonna test you on some financial math problems, so I hope you know the answer to this question! If you carry a balance of $500 on your credit card with an annual interest rate of 18%, will you pay $7.50 in interest in one month? Assume the monthly interest rate is 18% ÷ 12. (Math problems will earn you gold.)",
-        "accept": {
-            "gold": 3,
-            "people": 0,
-            "happiness": 3
-            },
+        },
         "reject": {
-            "gold": -3,
+            "gold": 0,
             "people": 0,
-            "happiness": -3
-            },
+            "happiness": -20
+        },
         "answer": 1
     },
     {
-        "id": 11,
-        "description": "King Midas, if you carry a balance of $500 on your credit card with an annual interest rate of 18%, will you pay $7.50 in interest in one month? Assuming the monthly interest rate is 18% ÷ 12? Sorry, my abacus broke and I'm scared about the money I owe.",
+        "id": 10,
+        "description": "My friend and I were thinking about opening a joint account, but she said joint accounts are only available for married couples. Is that really the case, King Midas?",
         "accept": {
-            "gold": 15,
+            "gold": 0,
+            "people": 0,
+            "happiness": -20
+        },
+        "reject": {
+            "gold": 0,
             "people": 0,
             "happiness": 5
-            },
-        "reject": {
-            "gold": -15,
+        },
+        "answer": 0
+    },
+    {
+        "id": 11,
+        "description": "Hi King Midas, me again. If you invest $2,000 in a Certificate of Deposit (CD) for 2 years at an annual interest rate of 5%, will the total amount in your CD after 2 years be $2500, assuming simple interest?",
+        "accept": {
+            "gold": -50,
             "people": 0,
-            "happiness": -10
-            },
+            "happiness": -5
+        },
+        "reject": {
+            "gold": 5,
+            "people": 0,
+            "happiness": 5
+        },
         "answer": 0
     },
     {
         "id": 12,
+        "description": "If you carry a balance of $500 on your credit card with an annual interest rate of 18%, will you pay $7.50 in interest in one month? Assuming the monthly interest rate is 18% ÷ 12? Sorry, my abacus broke and I’m scared about the money I owe.",
+        "accept": {
+            "gold": 5,
+            "people": 0,
+            "happiness": 5
+        },
+        "reject": {
+            "gold": -35,
+            "people": 0,
+            "happiness": -5
+        },
+        "answer": 1
+    },
+    {
+        "id": 13,
+        "description": "A friend told me that credit scores are only affected by the amount of debt you owe and not your payment history. Is that true?",
+        "accept": {
+            "gold": 0,
+            "people": 0,
+            "happiness": -20
+        },
+        "reject": {
+            "gold": 0,
+            "people": 0,
+            "happiness": 5
+        },
+        "answer": 0
+    },
+    {
+        "id": 14,
         "description": "King Midas! I'm trying to understand the difference between secured and unsecured loans. Does a secured loan require collateral, while an unsecured loan does not?",
         "accept": {
             "gold": 0,
             "people": 0,
             "happiness": 5
-            },
+        },
         "reject": {
             "gold": 0,
             "people": 0,
-            "happiness": -10
-            },
+            "happiness": -20
+        },
         "answer": 1
-    },
-    {
-        "id": 13,
-        "description": "I heard that having a high credit score can help you qualify for loans with better interest rates. Is that true?",
-        "accept": {
-            "gold": -1,
-            "people": 0,
-            "happiness": 5
-            },
-        "reject": {
-            "gold": 0,
-            "people": 0,
-            "happiness": -1
-            },
-        "answer": 1
-    },
-    {
-        "id": 14,
-        "description": "",
-        "accept": {
-            "gold": -5,
-            "people": 0,
-            "happiness": 5
-            },
-        "reject": {
-            "gold": 5,
-            "people": 0,
-            "happiness": 5
-            },
-        "answer": 0
     },
     {
         "id": 15,
-        "description": "I'm gonna test you on some financial math problems, so I hope you know the answer to this question! If you take out a loan of $15,000 at an interest rate of 5% for 3 years, will you pay $2,250 in interest by the end of the loan term? Assume simple interest. (Math problems will earn you gold.)",
+        "description": "I heard that having a high credit score can help you qualify for loans with better interest rates. Is that true?",
         "accept": {
-            "gold": 5,
+            "gold": 0,
             "people": 0,
             "happiness": 5
-            },
+        },
         "reject": {
-            "gold": -5,
+            "gold": 0,
             "people": 0,
-            "happiness": -5
-            },
+            "happiness": -20
+        },
         "answer": 1
     },
     {
         "id": 16,
-        "description": "I was thinking about getting a debit card, but my friend said that it allows you to borrow money from the bank to make purchases. Is that correct?",
+        "description": "King Midas, asking for a friend that is not me,… if you take out a loan for $5,000 at an interest rate of 6% per year for 5 years, will your monthly payment approximately be $50 for a fixed-rate loan?",
         "accept": {
-            "gold": 0,
+            "gold": -45,
             "people": 0,
-            "happiness": -1
-            },
+            "happiness": -5
+        },
         "reject": {
-            "gold": 0,
+            "gold": 5,
             "people": 0,
-            "happiness": 1
-            },
+            "happiness": 5
+        },
         "answer": 0
     },
     {
         "id": 17,
-        "description": "King Midas, asking for a friend that is not me,… if you take out a loan for $10,000 at an interest rate of 6% per year for 5 years, will your monthly payment approximately be $100 for a fixed-rate loan? ",
+        "description": "King Midas, can you help me do my homework? If you take out a loan of $5,000 at an interest rate of 5% for 3 years, will you pay $2,250 in interest by the end of the loan term? Assuming simple interest.",
         "accept": {
-            "gold": 0,
+            "gold": 5,
             "people": 0,
-            "happiness": 1
-            },
+            "happiness": 5
+        },
         "reject": {
-            "gold": 0,
+            "gold": -50,
             "people": 0,
-            "happiness": -1
-            },
+            "happiness": -5
+        },
         "answer": 1
     },
     {
         "id": 18,
-        "description": "King Midas, you fraud! If you take out a loan of $15,000 at an interest rate of 5% for 3 years, will you pay $2,250 in interest by the end of the loan term? Assuming simple interest.",
+        "description": "I was thinking about getting a debit card, but my friend said that it allows you to borrow money from the bank to make purchases. Is that correct?",
         "accept": {
-            "gold": 15,
+            "gold": 0,
             "people": 0,
-            "happiness": 1
-            },
+            "happiness": -20
+        },
         "reject": {
             "gold": 0,
             "people": 0,
-            "happiness": -1
-            },
-        "answer": 1
+            "happiness": 5
+        },
+        "answer": 0
     },
     {
         "id": 19,
-        "description": "I've heard that defaulting on a loan can negatively impact your credit score. Is that true?",
+        "description": "I’ve been thinking about getting a credit card, but I don't want to mess up my credit score. Does using a credit card responsibly help you get better loan terms and interest rates in the future?",
         "accept": {
             "gold": 0,
             "people": 0,
-            "happiness": 1
-            },
+            "happiness": 5
+        },
         "reject": {
             "gold": 0,
             "people": 0,
-            "happiness": -1
-            },
+            "happiness": -20
+        },
         "answer": 1
     }
-    
 ]

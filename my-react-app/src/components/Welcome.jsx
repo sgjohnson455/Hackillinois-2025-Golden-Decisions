@@ -43,33 +43,39 @@ export default function Welcome() {
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1, delay: 3 }}>
 
-                    <h1><u> Overview </u></h1>
+                    <h1><u> Golden Decisions - Overview </u></h1>
                     <p>
-                        1) You, Midas, are the ruler of the kingdom, and your citizens come to you for financial
-                        requests/advice.
-                    </p>
-                    <p>
-                        2) As the ruler of the kingdom, you must decide whether you think the request/advice is good 
-                        or bad by choosing either a yes or no option.
-                    </p>
-                    <p>
-                        3) You start off with certain metrics, such as <u>happiness</u> and <u>wealth</u>. Happiness
+                        1) You are King Midas, ruler of Phyrgia. As King, it is your job to manage certain metrics, such as <u>happiness</u> and <u>wealth</u>. Happiness
                         represents how content your people are with your decisions, and wealth represents how much gold you currently possess. You
                         want to keep happiness as high as possible to avoid any negative consequences.
                     </p>
                     <p>
-                        4) You must balance happiness and wealth. If any of these go too low, you may face problems
-                        like being betrayed by your people or not having enough gold to keep the kingdom running.
+                        2) As the ruler of the kingdom, you get first and final say on any queries your people have come to you with. This is a system that has worked out greatly for you.
+                        That is, until Dionysus gifted you the Golden Touch.
                     </p>
+                    <p>
+                        3) Manage your people and their growing perception of your wealth, using financial literacy skills!
+                    </p>
+                    <p>          ** Fun fact, financial literacy rates for adults sits at around 50%</p>
                 </motion.div>
 
-                <motion.button
-                    className={styles.button}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 1, delay: 4.5 }}>
-                    <Link to="/maingame"> START </Link>
-                </motion.button>
+                <div style={{ position: 'absolute', bottom: '17%', display: 'flex', flexDirection: 'row', gap: '5rem', justifyItems: 'center' }}>
+                    <motion.button
+                        className={styles.button}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1, delay: 4.5 }}>
+                        <Link to="/maingame"> START </Link>
+                    </motion.button>
+
+                    <motion.button
+                        className={styles.button}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1, delay: 4.5 }}>
+                        <Link to="https://drive.google.com/file/d/1jZlzbTP4TEQH9o-JAwhXdQVQnGZ7JbQQ/view?usp=sharing"> LETTER </Link>
+                    </motion.button>
+                </div>
             </div>
         </div>
     )

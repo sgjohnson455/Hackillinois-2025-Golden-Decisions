@@ -6,7 +6,7 @@
     align-items: center;
     height: fit-content;
     gap: 5rem;
-    transform: translateY(12rem);
+    transform: translateY(11rem);
     color: white;
     text-shadow: 2px 2px 3px white, -2px -2px 3px white, 2px -2px 3px white, -2px 2px 3px white;
 }
