@@ -15,8 +15,9 @@ function App() {
       <style>@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');</style>
       <Router>
         <Routes>
-          <Route exact path='/' element= {<Welcome />} />
-          <Route exact path='/maingame' element= {<Minigame />}/>
+          <Route path='/' element= {<Welcome />} />
+          <Route path='/maingame' element= {<Minigame />}/>
+          <Route path='*' element= {<Welcome />}/>
         </Routes>
       </Router>
 
