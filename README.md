@@ -29,7 +29,7 @@ Here is the (very rough) [Figma](https://www.figma.com/design/E8MPffaGbHvcnT1Jao
 │   └── .../
 ├── README.md
 ```
-Read more on getting started with Create React App [here](./museum-gallery/README.md). <br>
+Read more on getting started with Create React App [here](./my-react-app/README.md). <br>
 
 <br>
 
